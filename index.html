@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FURIES - Eat Outside the Box | Modern Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">FURIES</a>
+        
+        <nav class="nav-desktop">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About us</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-outline">Contact</a>
+            <button class="btn btn-ghost cart-btn" id="cartBtn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 6h15l-1.5 9h-12z"></path>
+                <circle cx="9" cy="20" r="1"></circle>
+                <circle cx="18" cy="20" r="1"></circle>
+                <path d="M6 6L5 3H2"></path>
+              </svg>
+              <span class="cart-count" id="cartCount">0</span>
+            </button>
+          </div>
+        </nav>
+        
+        <button class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" id="navMobile">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Content -->
+        <div class="hero-content-left animate-on-scroll">
+          <div class="reviews-badge">
+            <div class="avatar-group">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Customer">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Customer">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="Customer">
+            </div>
+            <div class="reviews-text">
+              <strong>1200+</strong>
+              <span>Positive Reviews</span>
+            </div>
+          </div>
+          
+          <h1 class="hero-title">
+            EAT <span class="decorative-o"></span>UT<br>SIDE THE B<span class="decorative-o"></span>X
+          </h1>
+          
+          <p class="hero-description">
+            A stunning combination of contemporary American fare with Italian influences. Delight in prime steaks, homemade pastas, fresh seafood.
+          </p>
+          
+          <div class="video-trigger">
+            <div class="video-thumb" id="videoThumb">
+              <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=160&h=160&fit=crop" alt="Chef cooking">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="video-label">
+              <strong>Watch Video</strong>
+              <span>Our Kitchen Story</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Center - Food Image -->
+        <div class="hero-center animate-on-scroll">
+          <div class="food-frame">
+            <div class="food-frame-inner">
+              <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&h=800&fit=crop" alt="Delicious pasta dish">
+            </div>
+            <div class="curved-text">
+              <svg viewBox="0 0 200 200">
+                <defs>
+                  <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+                </defs>
+                <text>
+                  <textPath href="#circlePath">FLAVORS FOR ROYALTY • FLAVORS FOR ROYALTY • </textPath>
+                </text>
+              </svg>
+            </div>
+            <div class="floating-badge">
+              <span>SPICY<br>MEAL</span>
+              <svg viewBox="0 0 24 24"><path d="M12 2L15 9L22 9L16 14L18 21L12 17L6 21L8 14L2 9L9 9L12 2Z"/></svg>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Content -->
+        <div class="hero-content-right animate-on-scroll">
+          <div class="offer-card">
+            <div class="offer-icon">🔥</div>
+            <div class="offer-content">
+              <h4>20% OFF</h4>
+              <p>Limited Offer - Today Only</p>
+            </div>
+          </div>
+          
+          <div class="featured-dishes">
+            <div class="mini-dish">
+              <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=120&h=120&fit=crop" alt="Chinese Meal">
+              <div class="mini-dish-info">
+                <h5>Chinese Meal Fua</h5>
+                <div class="price">
+                  <span class="original-price">$120.00</span>
+                  <span class="current-price">$100</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mini-dish">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=120&h=120&fit=crop" alt="Fresh Salad">
+              <div class="mini-dish-info">
+                <h5>Fresh Garden Salad</h5>
+                <div class="price">
+                  <span class="original-price">$80.00</span>
+                  <span class="current-price">$68</span>
+                </div>
+              </div>
+            </div>
+            
+            <a href="menu.html" class="view-all-btn">
+              View All Dishes
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foodies Welcome Section -->
+  <section class="foodies-section">
+    <div class="container">
+      <div class="foodies-content">
+        <div class="welcome-graphic animate-on-scroll">
+          <div class="welcome-circle">
+            <svg class="circular-text-container" viewBox="0 0 400 400">
+              <defs>
+                <path id="welcomeCirclePath" d="M 200, 200 m -170, 0 a 170,170 0 1,1 340,0 a 170,170 0 1,1 -340,0"/>
+              </defs>
+              <text>
+                <textPath href="#welcomeCirclePath">FOODIES WELCOME HERE • FOODIES WELCOME HERE • </textPath>
+              </text>
+            </svg>
+            <div class="welcome-circle-inner">
+              <div class="welcome-smiley"></div>
+              <div class="welcome-circle-img">
+                <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&h=300&fit=crop" alt="Delicious food">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="foodies-text animate-on-scroll">
+          <span class="section-label">About Us</span>
+          <h2>Choose healthy,<br>🔥 Be strong, Live long</h2>
+          <p>Experience the perfect blend of flavor and nutrition. Our expert chefs craft each dish with locally sourced ingredients, ensuring every bite is a celebration of taste and wellness. From farm-fresh vegetables to premium proteins, we bring you meals that nourish your body and delight your senses.</p>
+          <a href="about.html" class="btn btn-primary">Learn Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Our Menu</span>
+        <h2 class="section-title">Best Delivered Categories</h2>
+      </div>
+      
+      <div class="categories-grid">
+        <div class="category-card animate-on-scroll">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=240&h=240&fit=crop" alt="Vegetable Chopii">
+          </div>
+          <h4>Vegetable Chopii</h4>
+          <p class="price">$56</p>
+          <p class="desc">Fresh garden vegetables</p>
+        </div>
+        
+        <div class="category-card animate-on-scroll">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=240&h=240&fit=crop" alt="Classic Pizza">
+          </div>
+          <h4>Classic Pizza</h4>
+          <p class="price">$68</p>
+          <p class="desc">Wood-fired artisanal</p>
+        </div>
+        
+        <div class="category-card animate-on-scroll">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=240&h=240&fit=crop" alt="Pasta Fresca">
+          </div>
+          <h4>Pasta Fresca</h4>
+          <p class="price">$45</p>
+          <p class="desc">House-made daily</p>
+        </div>
+        
+        <div class="category-card animate-on-scroll">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=240&h=240&fit=crop" alt="Seafood Grill">
+          </div>
+          <h4>Seafood Grill</h4>
+          <p class="price">$89</p>
+          <p class="desc">Ocean fresh catch</p>
+        </div>
+        
+        <div class="category-card animate-on-scroll">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=240&h=240&fit=crop" alt="Gourmet Burger">
+          </div>
+          <h4>Gourmet Burger</h4>
+          <p class="price">$42</p>
+          <p class="desc">Premium beef patty</p>
+        </div>
+        
+        <div class="category-card animate-on-scroll">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=240&h=240&fit=crop" alt="Avocado Toast">
+          </div>
+          <h4>Avocado Toast</h4>
+          <p class="price">$38</p>
+          <p class="desc">Sourdough specialty</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">Our Client Feedback</h2>
+      </div>
+      
+      <div class="testimonials-slider">
+        <div class="testimonial active">
+          <div class="testimonial-avatar">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=160&h=160&fit=crop&crop=face" alt="Sarah Johnson">
+          </div>
+          <div class="testimonial-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"The most exquisite dining experience I've had in years. Every dish was a masterpiece of flavor and presentation. The staff's attention to detail made our anniversary dinner truly unforgettable."</p>
+          <div class="testimonial-author">
+            <h4>Sarah Johnson</h4>
+            <p>Food Critic, NYC</p>
+          </div>
+        </div>
+        
+        <div class="testimonial" style="display: none;">
+          <div class="testimonial-avatar">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=160&h=160&fit=crop&crop=face" alt="Michael Chen">
+          </div>
+          <div class="testimonial-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"As a chef myself, I'm incredibly picky about where I dine. Furies exceeded all my expectations. Their pasta is handmade perfection, and the wine selection is impeccable."</p>
+          <div class="testimonial-author">
+            <h4>Michael Chen</h4>
+            <p>Executive Chef</p>
+          </div>
+        </div>
+        
+        <div class="testimonial" style="display: none;">
+          <div class="testimonial-avatar">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=160&h=160&fit=crop&crop=face" alt="Emma Williams">
+          </div>
+          <div class="testimonial-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"The atmosphere, the service, the food - everything was magical. I hosted my birthday dinner here and my guests are still talking about it weeks later. Simply the best!"</p>
+          <div class="testimonial-author">
+            <h4>Emma Williams</h4>
+            <p>Event Planner</p>
+          </div>
+        </div>
+        
+        <div class="testimonial-nav">
+          <button class="prev-btn" id="prevTestimonial">
+            <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="next-btn" id="nextTestimonial">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">FURIES</a>
+          <p>Experience the art of culinary excellence. Every dish tells a story of passion, tradition, and innovation.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#">Dine-in</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Private Events</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h5>Newsletter</h5>
+          <p>Subscribe for exclusive offers and culinary updates.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 FURIES Restaurant. All rights reserved.</p>
+        <div class="payment-methods">
+          <span>VISA</span>
+          <span>MASTERCARD</span>
+          <span>AMEX</span>
+          <span>PAYPAL</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose">
+        <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <p>Your cart is empty</p>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span class="total-price" id="cartTotal">$0.00</span>
+      </div>
+      <button class="btn btn-primary" id="checkoutBtn">Checkout</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
